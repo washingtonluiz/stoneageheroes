@@ -5,7 +5,9 @@ class Footer extends Component {
   render(){
     return (
       <footer className="footer">
-        Footer
+        <div className="wrap">
+            <span className="copyright">Stone Age Heroes 2019 - Todos os direitos reservados</span>
+        </div>
       </footer>
     );
   }
