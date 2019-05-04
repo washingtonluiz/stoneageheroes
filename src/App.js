@@ -8,17 +8,19 @@ import Footer from './components/Footer';
 class App extends Component {
 
   consultaApi = () => {
-    axios.get('http://superheroapi.com/api/2557663390919470/1')
+    for(let i=0; i<= 731;i++){
+      axios.get('http://superheroapi.com/api/2557663390919470/'+i)
       .then(function (response) {
         console.log(response.data);
       })
       .catch(function (error) {
         console.log(error);
       });
+    }
   }
   
   componentDidMount(){
-    this.consultaApi();
+    // this.consultaApi();
   }
   render(){
     return (

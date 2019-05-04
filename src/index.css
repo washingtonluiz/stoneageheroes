@@ -3,7 +3,18 @@
   --fontFamily-1: 'Roboto', sans-serif;
   --fontFamily-2: 'Germania One', cursive;
   --white: #ffffff;
-  --black: #000000;
+  --black: #141418;
+}
+
+/* Theme Skin - Light */
+.theme--light {
+  background: var(--white);
+  color: var(--black);
+}
+.theme--light .footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #d4d4d4;
+  color: var(--black);
 }
 
 /* Theme Skin - Dark */
@@ -11,11 +22,9 @@
   background: var(--black);
   color: var(--white);
 }
-
-/* Theme Skin - Light */
-.theme--light {
-  background: var(--white);
-  color: var(--black);
+.theme--dark .footer {
+  background: #27272d;
+  color: var(--white);
 }
 
 /* Grid */
@@ -57,7 +66,7 @@ ul{
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
