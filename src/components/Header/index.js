@@ -6,6 +6,7 @@ class Header extends Component {
   constructor(){
     super();
     this.state = {
+      listHeroesSearch: [],
       iconTheme: 'fa-moon-o',
       iconSearchMobile: 'fa-search',
       openSearchMobile: '',
@@ -13,18 +14,19 @@ class Header extends Component {
       isError: false
     }
   }
+  
 
   handleChange = (event) => {
     this.setState({value: event.target.value});
   }
-  handleSearch = () => {
+  handleSearch = async () => {
     if(this.state.value === ''){
       this.setState({isError: true})
     }else{
       Api(`search/${this.state.value}`)
       .then(function (response) {
         if(response.data.response === 'success'){
-          console.log(response.data);
+          console.log(response.data.results);
         }else{
           console.log('Busca não encontrada. Digite o nome corretamente!');
         }
