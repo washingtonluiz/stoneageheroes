@@ -70,3 +70,15 @@ select:-webkit-autofill:focus {
     transform: scale(1.2);
   }
 }
+
+@keyframes back {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -10px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}

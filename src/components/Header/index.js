@@ -21,7 +21,7 @@ class Header extends Component {
   }
   handleSearch = async () => {
     if(this.state.value === ''){
-      this.setState({isError: true})
+      this.setState({isError: true});
     }else{
       Api(`search/${this.state.value}`)
       .then(function (response) {
