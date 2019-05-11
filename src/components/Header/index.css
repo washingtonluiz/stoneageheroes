@@ -92,6 +92,7 @@
 }
 .header__box__theme .fa{
     cursor: pointer;
+    display: none;
 }
 .search-field__input {
     border: none;

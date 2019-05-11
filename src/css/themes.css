@@ -21,6 +21,9 @@
     border-left: 1px solid #d4d4d4;
     color:  #9393ab;
   }
+  .theme--light .header__box__theme .fa-moon-o {
+    display: block;
+  }
   
   /* Theme Skin - Dark */
   .theme--dark {
@@ -53,5 +56,16 @@
   .theme--dark .search-field input {
     color: var(--white);
     background: #27272d;
+  }
+  .theme--dark .header__box__theme .fa-sun-o {
+    display: block;
+  }
+  .theme--dark .content__box-hero__parent{
+    border-bottom: 1px solid var(--black);
+    border-left: 1px solid var(--black);
+    border-right: 1px solid var(--white);
+  }
+  .theme--dark .header__search__error{
+    color: var(--black);
   }
   

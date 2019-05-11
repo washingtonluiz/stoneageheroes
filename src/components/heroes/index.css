@@ -1,6 +1,7 @@
 .list-heroes{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 50px;
 }
 .list-heroes__item{
@@ -78,22 +79,22 @@
     transition: background 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 1367px){
+@media screen and (max-width: 1023px){
     .list-heroes__item__box-data{
         bottom: 0;
     }
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     .list-heroes__item:hover .list-heroes__item__image:after {
         background: rgba(0, 0, 0, 0.2);
     }
+    .list-heroes__item--favorite .fa-heart-o:hover{
+        animation: heart .5s alternate infinite ease-in;
+    }
     .list-heroes__item:hover .list-heroes__item__box-data{
         bottom: 0;
-    }
-    .list-heroes__item--favorite:hover{
-        animation: heart .5s alternate infinite ease-in;
     }
 }
 
